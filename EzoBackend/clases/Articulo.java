@@ -12,7 +12,8 @@ public class Articulo {
     private BigDecimal precio;
     private String     tipo;
     private UUID       idPublisher;   
-    private UUID        idDeveloper;   
+    private UUID       idDeveloper;
+    private Boolean    disponible;    
 
     public Articulo() {}
 
@@ -25,6 +26,7 @@ public class Articulo {
     public String     getTipo()            { return tipo; }
     public UUID       getIdPublisher()     { return idPublisher; }
     public UUID       getIdDeveloper()     { return idDeveloper; }
+    public Boolean    getDisponible()     { return disponible; }
 
     public void setIdArticulo(UUID id)             { this.idArticulo = id; }
     public void setNombre(String nombre)          { this.nombre = nombre; }
@@ -35,6 +37,7 @@ public class Articulo {
     public void setTipo(String tipo)              { this.tipo = tipo; }
     public void setIdPublisher(UUID idPublisher)   { this.idPublisher = idPublisher; }
     public void setIdDeveloper(UUID idDeveloper)   { this.idDeveloper = idDeveloper; }
+    public void setDisponible(Boolean disponible) { this.disponible = disponible; }
 
     @Override public String toString() {
         return "{\"id_articulo\":" + idArticulo + ",\"nombre\":\"" + nombre +
