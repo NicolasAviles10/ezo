@@ -8,7 +8,6 @@ public class DetalleFactura {
     private String     descripcion;
     private int        cantidad;
     private BigDecimal precioUnitario;
-    private BigDecimal subtotalLinea;
 
     public DetalleFactura() {}
 
@@ -17,12 +16,10 @@ public class DetalleFactura {
     public String     getDescripcion()      { return descripcion; }
     public int        getCantidad()         { return cantidad; }
     public BigDecimal getPrecioUnitario()   { return precioUnitario; }
-    public BigDecimal getSubtotalLinea()    { return subtotalLinea; }
 
     public void setIdDetalleFactura(UUID id)     { this.idDetalleFactura = id; }
     public void setIdFactura(UUID id)            { this.idFactura = id; }
     public void setDescripcion(String d)        { this.descripcion = d; }
     public void setCantidad(int c)              { this.cantidad = c; }
     public void setPrecioUnitario(BigDecimal p) { this.precioUnitario = p; }
-    public void setSubtotalLinea(BigDecimal s)  { this.subtotalLinea = s; }
 }

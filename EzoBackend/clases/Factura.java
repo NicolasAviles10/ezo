@@ -10,8 +10,6 @@ public class Factura {
     private UUID       idUsuario;     
     private BigDecimal impuesto;
     private BigDecimal total;
-    private String     estado;
-    private LocalDate  fechaVencimiento;
     private LocalDate  fechaEmision;
     private BigDecimal subtotal;
     private String     nitEmpresa;
@@ -26,8 +24,6 @@ public class Factura {
     public UUID       getIdUsuario()        { return idUsuario; }
     public BigDecimal getImpuesto()         { return impuesto; }
     public BigDecimal getTotal()            { return total; }
-    public String     getEstado()           { return estado; }
-    public LocalDate  getFechaVencimiento() { return fechaVencimiento; }
     public LocalDate  getFechaEmision()     { return fechaEmision; }
     public BigDecimal getSubtotal()         { return subtotal; }
     public String     getNitEmpresa()       { return nitEmpresa; }
@@ -40,8 +36,6 @@ public class Factura {
     public void setIdUsuario(UUID id)               { this.idUsuario = id; }
     public void setImpuesto(BigDecimal imp)        { this.impuesto = imp; }
     public void setTotal(BigDecimal total)         { this.total = total; }
-    public void setEstado(String estado)           { this.estado = estado; }
-    public void setFechaVencimiento(LocalDate f)   { this.fechaVencimiento = f; }
     public void setFechaEmision(LocalDate f)       { this.fechaEmision = f; }
     public void setSubtotal(BigDecimal sub)        { this.subtotal = sub; }
     public void setNitEmpresa(String n)            { this.nitEmpresa = n; }
